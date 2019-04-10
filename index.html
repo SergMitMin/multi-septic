@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>СептикАльянс</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-menu">
+                <!-- logo -->
+                <div class="header-menu-logo">
+                    <a class="header-menu-logo__logo-text header-menu-links__item" href="#top" >Спец<span>Т</span>ранс<span>А</span>льянс</a>
+                </div>
+                <div class="header-menu_mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!-- Links -->
+                <ul class="header-menu-links"> 
+                    <li class="drop-handler">
+                            <a class="header-menu-links__item header-menu-links__item_dropdown"  href="#presentation">Услуги <span><img src="img/arrow-down.png" alt="down"></span></a>
+                        <ul class="dropdown">
+                            <li><a href="">Илосос</a></li>
+                            <li><a href="">Ассенизатор</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-handler">
+                        <a class="header-menu-links__item header-menu-links__item_dropdown" href="#special">Полезные статьи <span><img src="img/arrow-down.png" alt="down"></span></a>
+                        <ul class="dropdown">
+                            <li><a href="ilosos.html"> Об Илососе</a></li>
+                            <li><a href="assenizator.html"> Об Ассенизаторе</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="header-menu-links__item" href="#feedback">Отзывы</a></li>
+                    <li><a class="header-menu-links__item" href="#about">О нас</a></li>
+                    <li><a class="header-menu-links__item" href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!-- Main -->
+    <section class="main" id="top">
+        <div class="container container_main">
+            <div class="main-phones text-content">
+                <a href="tel:+7(495)923-28-85">+7(495)923-28-85</a>
+                <a href="tel:+7(985)105-85-81">+7(985)105-85-81</a>
+                <button class="btn">Заказать звонок</button>
+            </div>
+            <div class="main-call text-content">
+                <ul>
+                    <li>Откачка бытовой и промышленной канализации, вывоз и утилизация ЖБО</li>
+                    <li>Очистка выгребных ям, септиков, дна колодца илососом</li>
+                    <li>Удаление густого осадка, ила, шлама, взвеси из накопительных емкостей</li>
+                    <li>Очистка биотуалетов, мойка кабины</li>
+                    <li>Откачка воды из строительных котлованов, прудов, подвалов</li>
+                </ul>
+                <button class="btn">Заказать</button>
+            </div>
+        </div>
+    </section>
+    <!-- Services -->
+    <section class="services">
+        <div class="container text-content">
+            <h2>Услуги</h2>
+            <div class="services-ilosos visible">
+                <button class="assenizator-activator" id="ilo-ase">Ассенизатор <span><img src="img/saBtnIcon.png" alt="Ассенизатор"></span> </button>
+                <button class="ilosos-activator" id="ilo-ilo"><span><img src="img/siBtnIcon.png" alt="Илосос"></span> Илосос</button>
+                <div class="services-ilosos__description">
+                    <p>Илосос - современное высокотехнологичное оборудование, используемое для вакуумной откачки жидких и полужидких
+                        бытовых и промышленных отходов, в том числе жиросодержащих.</p>
+                    <p>
+                        Исключение составляют взрывоопасные и химически агрессивные вещества. <br>
+                        <a href="#">Читать подробнее</a>
+                    </p>
+
+                    <img src="img/ilo.png" alt="Ilosos">
+                </div>
+                <div class="services-ilosos__calc">
+                    <h3 class="top-header">Расчёт по Илососу</h3>
+                    <p>Вы можете рассчитать приблизительную стоимость услуги илососа, воспользовавшись калькулятором.</p>
+                    <div class="services-ilosos__calc_controls">
+                        <p class="calc-price__text">Калькулятор</p>
+                        <!-- City -->
+                        <div class="row">
+                            <label for="Moscow">В Москве</label>
+                            <input type="radio" name="CityIlo" id="ilo-mos" checked>
+                            <label for="Moscow">За МКАД</label>
+                            <input type="radio" name="CityIlo" id="ilo-mca">
+                        </div>
+                        <!-- Capacity -->
+                        <p class="calc-price__text">Объём жидкости<span class="orange">*</span></p>
+                        <div class="row">
+                            <label for="2-4">2-4</label>
+                            <input type="radio" name="capacityIlo" id="ilo-24" checked>
+                            <label for="5-7">5-7</label>
+                            <input type="radio" name="capacityIlo" id="ilo-57">
+                            <label for="7-10">7-10</label>
+                            <input type="radio" name="capacityIlo" id="ilo-710">
+                        </div>
+                        <button class="btn" id="ilo-count__btn">Рассчитать</button>
+                        <p class="price-outer__text">Приблизительная цена : <span class="price-outer" id="ilo__price">2000</span> RUB</p>
+                    </div>
+                </div>
+            </div>
+            <div class="services-assenizator hidden">
+                    <button class="assenizator-activator" id="ase-ase">Ассенизатор <span><img src="img/saBtnIcon.png" alt="Ассенизатор"></span> </button>
+                    <button class="ilosos-activator" id="ase-ilo"><span><img src="img/siBtnIcon.png" alt="Илосос"></span> Илосос</button>
+                    <div class="services-assenizator__description">
+                        <p>
+                            Ассенизаторская техника предназначена для откачки нечистот, выгребных ям и септиков. То есть для жидких 
+                            отходов. Такая система представляет собой бочку, которая оборудована вакуумным насосом и гофрированным 
+                            шлангом.
+                            <a href="#">Читать подробнее</a>
+                        </p>
+
+                        <img src="img/ase.png" alt="Assenizator">
+                    </div>
+                    <div class="services-assenizator__calc text-content">
+                        <h3 class="top-header">Расчёт по Ассенизатору</h3>
+                        <p>Вы можете рассчитать приблизительную стоимость услуги илососа, воспользовавшись калькулятором.</p>
+                        <div class="services-assenizator__calc_controls">
+                            <p class="calc-price__text">Калькулятор</p>
+                            <!-- City -->
+                            <div class="row">
+                                <label for="Moscow">В Москве</label>
+                                <input type="radio" name="CityAse" id="ase-mos" checked>
+                                <label for="Moscow">За МКАД</label>
+                                <input type="radio" name="CityAse" id="ase-mcad">
+                            </div>
+                            <!-- Capacity -->
+                            <p class="calc-price__text">Объём жидкости<span>*</span></p>
+                            <div class="row">
+                                <label for="Moscow">2-4</label>
+                                <input type="radio" name="capacityAse" id="ase-24" checked>
+                                <label for="Moscow">5-7</label>
+                                <input type="radio" name="capacityAse" id="ase-57">
+                                <label for="Moscow">7-10</label>
+                                <input type="radio" name="capacityAse" id="ase-710">
+                            </div>
+                            <button class="btn" id="ase-count__btn">Рассчитать</button>
+                            <p class="price-outer__text">Приблизительная цена : <span class="price-outer" id="ase__price">1500</span> RUB</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!-- services ends -->
+    <section class="advantages text-content">
+        <h2>Преимущества</h2>
+        <div class="container">
+            <div class="advantages-item">
+                <img src="img/Aclock.png" alt="Clock">
+                <p>Выезд бригады 24/7</p>
+                <p>СпецТрансАльянс  работает круглосуточно и без выходных.
+                    Наши менеджеры помогут Вам
+                    с минимальными издержками решить вашу задачу</p>
+            </div>
+            <div class="advantages-item">
+                <img src="img/Amedal.png" alt="Medal">
+                <p>Мощное европейское оборудование</p>
+                <p>Компания имеет мощную ремонтную базу с высококвалифицированными специалистами, которые тщательно следят за техническим состоянием машин</p>
+            </div>
+            <div class="advantages-item">
+                <img src="img/Aeconomy.png" alt="Pig">
+                <p>Цена от 300 RUB</p>
+                <p>Сложность работ может оказать влияние на ценовой коэффициент,
+                    но исходя из практики мы можем гарантировать Вам самую низкую цену</p>
+            </div>
+            <div class="advantages-item">
+                <img src="img/Aecology.png" alt="Ecology">
+                <p>Экологичная работа</p>
+                <p>Обратившись к нам вы можете быть уверены, что получите всю экологическую и бухгалтерскую документацию.</p>
+            </div>
+        </div>
+    </section>
+    <!-- form -->
+    <div class="form-container text-content">
+        <form action="">
+            <h2>Оформить заявку</h2>
+            <div class="input">
+                <label for="name">Имя</label>
+                <input type="text" name="name">
+            </div>
+            <div class="input">
+                <label for="phone">Телефон</label>
+                <input type="text" name="phone">
+
+            </div>
+            <div class="input">
+                <label for="adress">Адрес</label>
+                <input type="text" name="adress">
+
+            </div>
+            <button class="btn">Заказать</button>
+
+        </form>
+    </div>
+    <!-- form--ends -->
+    <div class="header-handler text-content">
+        <h2>Вопросы?</h2>
+    </div>
+    <!-- Questions -->
+    <section class="question text-content">
+        <div class="container">
+            <div class="question-buttons">
+                <a class="source source-1">Чем илосос отличается от ассенизатора?</a>
+                <a class="source source-2">Как работает ассенизаторская машина?</a>
+                <a class="source source-3">Как работает илосос?</a>
+                <a class="source source-4">Чем илосос отличается от ассенизатора?</a>
+                <a class="source source-5">Как работает ассенизаторская машина?</a>
+                <a class="source source-6">Как работает илосос?</a>
+            </div>
+            <div class="question-targets">
+                <div class="target target-1">
+                    <h3>Header2</h3>
+                    <p>Ассенизатор предназначается для откачки и вывоза отходов, находящихся в жидком состоянии.
+                    </p>
+                    <p>
+                        Илосос может выполнить весь спектр работ, который выполняет ассенизатор. Однако использовать дорогостоящую илососную технику
+                        для простой откачки жидких отходов с небольшой глубины - экономически невыгодно.
+                    </p>
+                    <p>
+                        Выбор между ассенизатором и илососом зависит от характера выполняемых работ.
+                    </p>
+                </div>
+                <div class="target target-2">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque soluta, natus distinctio iste voluptatem numquam maxime ducimus dolor quaerat quibusdam?
+                    </p>
+                    <p>
+                        Илосос может выполнить весь спектр работ, который выполняет ассенизатор. Однако использовать дорогостоящую илососную технику
+                        для простой откачки жидких отходов с небольшой глубины - экономически невыгодно.
+                    </p>
+                    <p>
+                        Выбор между ассенизатором и илососом зависит от характера выполняемых работ.
+                    </p>
+                </div>
+                <div class="target target-3">
+                    <p>
+                        Илосос может выполнить весь спектр работ, который выполняет ассенизатор. Однако использовать дорогостоящую илососную технику
+                        для простой откачки жидких отходов с небольшой глубины - экономически невыгодно.
+                    </p>
+                    <p>
+                        Выбор между ассенизатором и илососом зависит от характера выполняемых работ.
+                    </p>
+                </div>
+                <div class="target target-4">
+                    <p>
+                        sdfsfdsdfsd который выполняет ассенизатор. Однако использовать дорогостоящую илососную технику
+                        для простой откачки жидких отхsdfsdfины - экономически невыгодно.
+                    </p>
+                    <p>
+                        Выбор между ассенизатором и илососом зависит от характера выполняемых работ.
+                    </p>
+                </div>
+                <div class="target target-5">
+                    <p>
+                       qeweqweqweqть весь спектр работ, который выполняет ассенизатор. Однако использовать дорогостоящую илососную технику
+                        для простой откачки жидких отходов с небольшой глубины - экономически невыгодно.
+                    </p>
+                    <p>
+                        Выбор между ассенизатором и илососом зависит от характера выполняемых работ.
+                    </p>
+                </div>
+                <div class="target target-6">
+                    <h3>Header</h3>
+                    <p>
+                        Илосос может выполнить весь спектр работ, который выполняет ассенизатор. Однако использовать дорогостоящую илососную технику
+                        для простой откачки жидких отходов с небольшой глубины - экономически невыгодно.
+                    </p>
+                    <p>
+                        Выбор между ассенизатором и илососом зависит от характера выполняемых работ.
+                    </p>
+                     <p>
+                        Выбор между ассенизатором и илососом зависит от характера выполняемых работ.
+                    </p>
+                    <p>
+                        Выбор между ассенизатором и илососом зависит от характера выполняемых работ.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Question ends -->
+    <!-- Feedback -->
+    <section class="feedback text-content" id="feedback">
+            <h2>Отзывы</h2>
+        <div class="container">
+            <div class="container-hiders">
+                <button class="text-text__btn text-text__init"><span><img src="img/ftIcon.png" alt="Отзывы"></span> Отзывы</button>
+                <button class="text-video__btn">Видеоотзывы <span><img src="img/fvIcon.png" alt="Видео"></span></button>
+            </div>
+            <div class="feedback-text-slider hidden">
+                <div class="feedback-text-slider-item">
+                    <div class="row">
+                        <p>02.12.19</p>
+                        <img src="img/fStars.png" alt="Звёзды">
+                    </div>
+                    <div class="row">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum nostrum non, fugiat voluptatem necessitatibus omnis delectus officia debitis harum in ea reprehenderit amet ullam maxime aut quasi dolorum dolorem.</p>
+                    </div>
+                    <div class="row">
+                        <button class="text-prev__btn"><img src="img/fPrev.png" alt="Предыдущий слайд"></button>
+                        <button class="text-next__btn"><img src="img/fNext.png" alt="Следующий слайд"></button>
+                    </div>
+                </div>
+                <div class="feedback-text-slider-item">
+                    <div class="row">
+                        <p>02.12.19</p>
+                        <img src="img/fStars.png" alt="Звёзды">
+                    </div>
+                    <div class="row row-text">
+                        <h2>safikjsdof</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, reprehenderit velit cum tempora dicta aut.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum nostrum non, fugiat voluptatem necessitatibus omnis delectus officia debitis harum in ea reprehenderit amet ullam maxime aut quasi dolorum dolorem.</p>
+                    </div>
+                    <div class="row">
+                        <button class="text-prev__btn"><img src="img/fPrev.png" alt="Предыдущий слайд"></button>
+                        <button class="text-next__btn"><img src="img/fNext.png" alt="Следующий слайд"></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="feedback-video-slider ">
+                <div class="feedback-video-slider-item">
+                    <div class="item__video">
+                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=QH2-TGUlwu4">
+                                <img class="video_img" src="img/fvBoy.png" alt="wedding">
+                            </a>
+                    </div>
+                    <div class="item__description">
+                        <div class="row">
+                            <p>02.12.19</p>
+                            <img src="img/fStars.png" alt="Звёзды">
+                        </div>
+                        <div class="row">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum nostrum non, fugiat voluptatem necessitatibus omnis delectus officia debitis harum in ea reprehenderit amet ullam maxime aut quasi dolorum dolorem.</p>
+                        </div>
+                        
+                        <div class="row">
+                            <button class="video-prev__btn"><img src="img/fPrev.png" alt="Предыдущий слайд"></button>
+                            <button class="video-next__btn"><img src="img/fNext.png" alt="Следующий слайд"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback-video-slider-item">
+                        <div class="item__video">
+                                <a class="popup-youtube" href="https://www.youtube.com/watch?v=QH2-TGUlwu4">
+                                    <img class="video_img" src="img/fvBoy.png" alt="wedding">
+                                </a>
+                        </div>
+                        <div class="item__description">
+                            <div class="row">
+                                <p>02.12.19</p>
+                                <img src="img/fStars.png" alt="Звёзды">
+                            </div>
+                            <div class="row">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eum nostrum non, fugiat voluptatem necessitatibus omnis delectus officia debitis harum in ea reprehenderit amet ullam maxime aut quasi dolorum dolorem.</p>
+                            </div>
+                            <div class="row">
+                                <button class="video-prev__btn"><img src="img/fPrev.png" alt="Предыдущий слайд"></button>
+                                <button class="video-next__btn"><img src="img/fNext.png" alt="Следующий слайд"></button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feedback ends -->
+    <!-- About -->
+    <section class="about text-content" id="about">
+        <h2>О компании</h2>
+        <div class="container about-container">
+            <div class="about-description">
+                <p>Если вы нуждаетесь в спецтехнике для проведения самостоятельных работ, то вы также можете обратиться
+                    к нам: мы предлагаем всю имеющуюся у нас технику в аренду.
+                    Профессиональный и высококвалифицированный штат сотрудников и большой парк техники позволяет эффективно и точно в сроки выполнять все заказы.
+                    Автопарк “СпецТрансАльянс” состоит из нескольких десятков машин как российского, так и иностранного производства. Компания имеет мощную ремонтную базу с высококвалифицированными специалистами, которые тщательно следят за техническим состоянием машин. Что позволяет без задержек и оперативно приступить
+                    к работе.
+                </p>
+                <p>
+                        Мы постоянно пополняем парк автотехники компании, что дает возможность увеличить объем работ и сделать Москву более чистым городом.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="img/aboutTree.png" alt="Зелёное дерево">
+            </div>
+        </div>
+        <h2>Контакты</h2>
+    </section>
+    <!-- About ends -->
+    <!-- Contacts -->
+    <section class="contacts text-content" id="contacts">
+        <div class="container">
+            <div class="contacts-hiders">
+                <button class="contacts-contacts__btn"><span><img src="img/contacts-contactsIcon.png" alt="Контакты"></span> Контакты</button>
+                <button class="contacts-form__btn"> Заказать звонок <span><img src="img/contacts-formIcon.png" alt="Телефон"></span></button>
+            </div>
+            <div class="contacts-contacts visible">
+                <p>Адрес: 119618, г. Москва, ул. 50 лет Октября дом 4, офис 223</p>
+                <p>Прием заказов: с 8.00 до 19.00 без выходных</p>
+                <p>Электронная почта: 9232885@gmail.com</p>
+                <p>Диспетчер:</p>
+                <p>8 (985) 998-79-76 - аренда техники, откачка септика <br>
+                   8 (495) 923-25-85 - бухгалтерия
+                </p>
+
+            </div>
+            <div class="contacts-form-block hidden">
+                <div class="description">
+                    <p>Наши менеджеры помогут Вам с минимальными издержками решить вашу задачу. Заполните форму и ожидайте звонка нашего специалиста.</p>
+                    <p>Чтобы заказать наши услуги, Вам достаточно связаться с нашими диспетчерами по телефону
+                        или оставьте онлайн заявку на нашем сайте.
+                    </p>
+                </div>
+                <form class="contacts-form" action="#">
+                        <div class="input">
+                            <label for="name">Имя</label>
+                            <input type="text" name="name">
+                        </div>
+                        <div class="input">
+                            <label for="phone">Телефон</label>
+                            <input type="text" name="phone">
+            
+                        </div>
+                        <button class="btn">Заказать звонок</button>
+            
+                </form>
+            </div>
+        </div>
+        <div class="map" id="map" style="width: 100%; height: 100%"></div>
+    </section>
+    <!-- Contacts ends -->
+    <footer class="footer text-content">
+        <div class="container footer-container">
+            <p>Все права защищены. Политика конфиденциальности.</p>
+            <a href="#" target="_blank">Разработка сайта: Студия “ЯР”</a>
+        </div>
+    </footer>
+
+
+    <!-- Add jQuery -->
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Add slick -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- popup -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <!-- Custom scripts -->
+    <script src="js/sliders.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/hider.js"></script>
+    <!-- maps -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"> </script>
+    <script src="js/map.js"></script>
+</body>
+</html>
