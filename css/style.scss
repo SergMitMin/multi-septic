@@ -44,6 +44,7 @@ $light-orange: #EEC062;
     display: flex;
     flex-direction: column;
 }
+
 *{
     padding: 0;
     margin: 0;
@@ -131,6 +132,23 @@ html {
         line-height: normal;
         text-align: center;
         color: #515A63;
+    }
+}
+.bread{
+    display: flex;
+    padding-top: 12rem;
+    padding-left: 18%;
+    margin-bottom: 2rem;
+    a{
+        text-decoration: none;
+        color: #000;
+        font-size: 2rem;
+        span{
+            margin: 0 1rem;
+        }
+        &:hover{
+            color: $main-orange;
+        }
     }
 }
 .btn{
@@ -1422,7 +1440,7 @@ html {
     align-items: center;
 
     .container{
-        margin-top: 10rem;
+        margin-top: 0rem;
         padding: 2rem 10rem;
         width: 100%;
         max-width: 120rem;

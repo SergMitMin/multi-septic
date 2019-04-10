@@ -163,6 +163,29 @@ html p, html a, html h1, html h2, html h3, html h4, html h5, html h6, html ul {
   color: #515A63;
 }
 
+.bread {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 12rem;
+  padding-left: 18%;
+  margin-bottom: 2rem;
+}
+
+.bread a {
+  text-decoration: none;
+  color: #000;
+  font-size: 2rem;
+}
+
+.bread a span {
+  margin: 0 1rem;
+}
+
+.bread a:hover {
+  color: #F48A1F;
+}
+
 .btn {
   border: none;
   font-family: 'Oswald';
@@ -1922,7 +1945,7 @@ html p, html a, html h1, html h2, html h3, html h4, html h5, html h6, html ul {
 }
 
 .ilosos-info .container {
-  margin-top: 10rem;
+  margin-top: 0rem;
   padding: 2rem 10rem;
   width: 100%;
   max-width: 120rem;
